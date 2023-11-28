@@ -3,7 +3,7 @@
 @Description NextJS의 기본적인 사용방법과 구조형식을 작성합니다.
 ---------------------------------------------------------------
 1. 프로젝트 구조
-- scr폴더 안에는 app폴더가 있고 app폴더 안에는 pages가 들어간다.
+- scr폴더 안에는 app폴더가 있고 app폴더 안에는 pages
 - dependencies의 node_modules
 - 외부에 노출되는 public
 - eslint규칙을 정의할 수 있는 eslintrc.json파일
@@ -22,6 +22,6 @@
   },
 
   - yarn dev로 실행하기
-  - 
 
-3. 
+3. NextJS에서 구성하는 기본적인 내용들
+- 

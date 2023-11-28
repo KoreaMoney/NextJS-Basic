@@ -1,4 +1,4 @@
-# NextJS Basic-version
+# NextJS Basic-version (NextJS 14)
 
 ## The basic usage of NextJS and simple projects are included.
 
