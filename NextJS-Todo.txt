@@ -1,0 +1,23 @@
+@Date Nov 2023
+@Author Kim Dowon
+@Description NextJS의 기본적인 사용방법과 구조형식을 작성합니다.
+---------------------------------------------------------------
+1. 프로젝트 구조
+- scr폴더 안에는 app폴더가 있고 app폴더 안에는 pages가 들어간다.
+- dependencies의 node_modules
+- 외부에 노출되는 public
+- eslint규칙을 정의할 수 있는 eslintrc.json파일
+- git에 commit하지 말아야 할 것
+- next-env.d.ts는 수정하지 말아야 한다.
+- next가 읽어가는 경로를 보여주는 next.config파일
+- react에서 볼 수 있는 package.json파일
+
+2. NextJS실행하기 (package.json파일 파악도 해보기)
+
+ "scripts": {
+    "dev": "next dev", - 개발용 모드
+    "build": "next build", - 서버에 배포한 뒤에 프로젝트를 빌드할 때
+    "start": "next start", - 서버에 배포한 뒤 빌드 후 실행할 때 사용
+    "lint": "next lint" - 프로젝트 소스코드를 검사할 때 사용 (EsLint)
+  },
+
