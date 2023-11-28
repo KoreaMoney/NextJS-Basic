@@ -21,3 +21,7 @@
     "lint": "next lint" - 프로젝트 소스코드를 검사할 때 사용 (EsLint)
   },
 
+  - yarn dev로 실행하기
+  - 
+
+3. 

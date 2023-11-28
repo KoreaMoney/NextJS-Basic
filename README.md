@@ -1,5 +1,11 @@
 # NextJS Basic-version
 
-## NextJS의 기본적인 사용법과 간단한 프로젝트가 들어갑니다.
+## The basic usage of NextJS and simple projects are included.
 
-<hr/>
+## Installing a Module
+
+### yarn
+
+## Project execution
+
+### yarn dev
