@@ -2,7 +2,7 @@
 @Author Kim Dowon
 @Description NextJS의 기본적인 사용방법과 구조형식을 작성합니다.
 ---------------------------------------------------------------
-1. 프로젝트 구조
+👉 프로젝트 구조
 - scr폴더 안에는 app폴더가 있고 app폴더 안에는 pages
 - dependencies의 node_modules
 - 외부에 노출되는 public
@@ -12,7 +12,7 @@
 - next가 읽어가는 경로를 보여주는 next.config파일
 - react에서 볼 수 있는 package.json파일
 
-2. NextJS실행하기 (package.json파일 파악도 해보기)
+👉 NextJS실행하기 (package.json파일 파악도 해보기)
 
  "scripts": {
     "dev": "next dev", - 개발용 모드
@@ -23,5 +23,15 @@
 
   - yarn dev로 실행하기
 
-3. NextJS에서 구성하는 기본적인 내용들
-- 
+👉 NextJS에서 구성하는 기본적인 내용
+ 1. app폴더에 page라는 폴더를 만들면 routing이 자동으로 진행된다.
+ 2. build
+    - yarn build
+    - app폴더 안에 어떤 폴더들이 route되어 있는지 확인 가능하고 크기가 얼마인지 알 수 있다.
+    - 처음으로 load되는 Javascript의 크기도 알 수 있다.
+    - SSG으로 되어 있는지 SSR인지 ISR인지 CSR인지도 확인할 수 있다.
+    - build이후에는 yarn start로 시작하면 된다.
+ 3. 정적 Routing
+    - pages안에 있는 파일을 routing하고 싶다면 app폴더에 pages의 해당하는 것을 폴더를 만들고 그 안에 page.tsx를 생성하여 routing처리하게 한다.
+    - web에서 /about을 하면 어떤 사람이던지 항상 같은 페이지가 라우팅되는 것을 말한다.
+ 4. 동적 Routing

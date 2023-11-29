@@ -11,3 +11,7 @@
 ## Project execution
 
 ### yarn dev
+
+## You can configure build to see how it works.
+
+### yarn build
