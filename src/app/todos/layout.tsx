@@ -1,5 +1,11 @@
 import Link from 'next/link';
 import styles from './todos.module.css';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'The record | TodoList',
+    description: 'This is the space where you create and store your to-do.',
+};
 
 const TODOSLINK = '/todos';
 

@@ -46,4 +46,8 @@
  7. Link
     - 여기에서는 단순히 react-router-dom을 사용하지 않고도 next/Link를 사용하여 페이지 전환을 할 수 있다.
  8. SEO
-    - 검색 최적화를 위해 
+    - 검색 최적화를 위해 진행
+    - metadata라는 next에서 제공하는 것을 사용하여 SEO를 진행한다.
+    - metadata가 작성되는 곳은 각각의 폴더가 가지는 가장 최상위인 layout에서 진행한다.
+    - 참고 LINK : https://nextjs.org/docs/app/building-your-application/optimizing/metadata
+    - generateMetadata을 사용하고 params를 하면 web페이지에 맞게 SEO를 설정할 수 있다.
