@@ -40,4 +40,10 @@
     - 동적 route의 결과를 update해줘야 하는데 여기에서 nextJS는 자동으로 component에 prop으로 데이터를 주기 때문이다.
  5. 페이지 미리 생성하기 (SSG)
     - generateStaticParams 함수를 사용해서 미리 page를 만들어 놓는다.
-    - 
+ 6. Not Found
+    - notFound()함수가 실행이 되면 내가 만든 not-found.tsx가 실행이 되면서 에러 메세지를 보여준다.
+    - app폴더 최상단에 not-found.tsx를 만들면 /뒤에 잘못 작성될 경우 app폴더 최상단에 있는 not-found가 실행이 되고 기존 nextJS의 404에러는 실행이 되지 않는다.
+ 7. Link
+    - 여기에서는 단순히 react-router-dom을 사용하지 않고도 next/Link를 사용하여 페이지 전환을 할 수 있다.
+ 8. SEO
+    - 검색 최적화를 위해 

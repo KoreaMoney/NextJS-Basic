@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #132f52;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav {
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.contact:hover {
+    color: rgb(148, 147, 147);
+}
+.contact:active {
+    color: #132f52;
+}
+.about:hover {
+    color: rgb(148, 147, 147);
+}
+.about:active {
+    color: #132f52;
+}
