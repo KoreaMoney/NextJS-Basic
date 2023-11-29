@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body className={inter.className}>
                 <header className={styles.header}>
                     <h1>
-                        <Link href="/">Demo Note | Todo</Link>
+                        <Link href="/">Demo Note</Link>
                     </h1>
                     <nav className={styles.nav}>
                         <Link href="/todos">ToDoList</Link>
