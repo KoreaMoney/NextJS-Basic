@@ -2,7 +2,7 @@
 
 ## The basic usage of NextJS and simple projects are included.
 
-### See the NextJS-Todo.txt file for more information.
+### See the [NextJS-Todo.txt](https://github.com/KoreaMoney/NextJS-Basic/blob/main/NextJS-Todo.txt) file for more information.
 
 ## Installing a Module
 
