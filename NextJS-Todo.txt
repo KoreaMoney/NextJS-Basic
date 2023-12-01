@@ -67,5 +67,15 @@
  👉 Client Components
  1. client component를 사용하고 싶다면 사용하고자 하는 component최상단에 'use client'을 작성하여 client component라고 인식시켜줘야 한다.
  2. app폴더에는 page와 관련된 내용을 담고 공통적으로 사용되는 client component의 항목들을 따로 components폴더를 생성하여 관리하는 것이 좋다.
+ 3. 사용되어야 하는 경우
+   - 사용자 이벤트 (onClick, onChange etc.)
+   - useState etc 사용해야하는 경우
+   - 브라우저 API를 사용해야하는 경우
+   - Custom hook을 사용해야하는 경우
+ 4. 절대 하지말아야 행위
+   - 전체 컴포넌트를 client component로 구성하면 안된다.
+   - 오직 작은 단위 component로 구성하고 필요한 경우에만 사용하는 것이 성능에 좋다.
+
  *공식 Doc : https://nextjs.org/docs/app/building-your-application/rendering/client-components
   
+ 👉 
