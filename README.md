@@ -15,3 +15,7 @@
 ## You can configure build to see how it works.
 
 ### yarn build
+
+## Link to the official NextJS document
+
+### https://nextjs.org/docs
