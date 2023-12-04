@@ -75,10 +75,19 @@
  4. 절대 하지말아야 행위
    - 전체 컴포넌트를 client component로 구성하면 안된다.
    - 오직 작은 단위 component로 구성하고 필요한 경우에만 사용하는 것이 성능에 좋다.
-
  *공식 Doc : https://nextjs.org/docs/app/building-your-application/rendering/client-components
   
- 👉  SSG에서 ISR로 변경하기
+ 👉 SSG에서 ISR로 변경하기
  1. export const revalidate = revalidate되는 초를 작성해준다 (ex. 3이면 3초를 의미하고 3600초면 한시간을 의미한다.)
  2. 확인하고 싶다면 yarn dev로 하면 항상 SSR로 구동되기 때문에 build를 진행하고 실제 사용자들이 체감하는 것을 확인하기 위해 start를 한다.
   *공식 Doc : https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating
+
+ 👉 fetch를 사용한 SSR.ISR,SSR구축하기
+ - api는 임시 데이터, {}로 option으로 넣을 수 있다.
+ - 만약 revalidate를 0으로 하면 SSR로 구축 할 수 있다.
+ - next:{}옵션 대신 cache : "no-store"를 사용해도 된다.
+ * const res = await fetch('https://meowfacts.herokuapp.com', {
+        next: { revalidate: 3 },
+    }); 
+   const data = await res.json();
+   const factTexts = data.data[0];
