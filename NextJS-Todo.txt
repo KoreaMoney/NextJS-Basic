@@ -96,3 +96,8 @@
  - SSR로 구축하기에는 너무 서버를 많이 불러 과부화가 올 수도 있기 때문에 이점 참고해서 개발하는 것이 좋다. 
  - 방법
  1. user-clinet가 등록된 client component에서 fetch를 진행한다.
+
+ 👉 API Routing
+ * 공식 Doc : https://nextjs.org/docs/app/building-your-application/routing/route-handlers
+
+ 
