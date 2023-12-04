@@ -1,11 +1,12 @@
 .header {
     margin-top: 5px;
-    border: 1px solid tomato;
+    border: 1px solid #727374;
     min-height: 3rem;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     font-weight: 600;
+    border-radius: 12px;
 }
 .nav {
     min-width: 16rem;

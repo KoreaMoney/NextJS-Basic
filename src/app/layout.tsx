@@ -23,11 +23,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         <Link href="/">Demo Note</Link>
                     </h1>
                     <nav className={styles.nav}>
-                        <Link href="/todos">ToDoList</Link>
-                        <Link href="/about" className={styles.about}>
+                        <Link href="/todos" className={styles.link}>
+                            ToDoList
+                        </Link>
+                        <Link href="/about" className={styles.link}>
                             About
                         </Link>
-                        <Link href="/contact" className={styles.contact}>
+                        <Link href="/contact" className={styles.link}>
                             Contact
                         </Link>
                     </nav>

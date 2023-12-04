@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px;
-    border-bottom: 1px solid #132f52;
+    border-bottom: 1px solid #727374;
     font-weight: bold;
     font-size: 20px;
 }
@@ -14,15 +14,9 @@
     justify-content: space-between;
     margin-right: 20px;
 }
-.contact:hover {
+.link:hover {
     color: rgb(148, 147, 147);
 }
-.contact:active {
-    color: #132f52;
-}
-.about:hover {
-    color: rgb(148, 147, 147);
-}
-.about:active {
+.link:active {
     color: #132f52;
 }
