@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import { getTodo, getTodos } from '@/service/todos';
 
+export const revalidate = 3; // ISR구축을 위해 3초마다 REVALIDATE진행
+
 interface Iprops {
     params: {
         slug: string;
