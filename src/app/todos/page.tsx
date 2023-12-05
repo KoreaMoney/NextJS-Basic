@@ -2,6 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 import { getTodos } from '@/service/todos';
 import MeowArticle from '@/components/MeowArticle';
+import Image from 'next/image';
+import todoBasicImage from '../../../public/images/todoImage.png';
 // import styles from '@/app/todos/page.module.css';
 
 // export const revalidate = 3; // ISR구축을 위해 3초마다 REVALIDATE진행
@@ -20,6 +22,7 @@ const TodosPage = async () => {
     return (
         <>
             <h1>📖 Space to create a todo list</h1>
+            <Image src={todoBasicImage} alt="기본 이미지" loading="lazy" />
             <ul>
                 {todoList.map(({ id, name }) => (
                     <li key={id}>

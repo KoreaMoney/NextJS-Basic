@@ -108,8 +108,10 @@
             직접 error를 해당 폴더에 만들지 않아도 근접한 error사항을 확인하고 적용시킨다.
  * 공식 Doc : https://nextjs.org/docs/app/building-your-application/routing/error-handling
  
- 3. Image
- 
+ 3. Image : nextJs에서 제공하는 next/image를 사용하면 최적화된 image를 구성해서 용량와 크기를 자동 조정해준다. 
+ 하지만 image의 src를 외부 주소를 사용할 경우 width와 height를 추가해주고 tsconfig에 images key를 추가하여 invalid src를 대처한다.
+ * 공식 Doc : https://nextjs.org/docs/app/building-your-application/optimizing/images
+
  4. Font
  
  5. Redirect & Rewrite
