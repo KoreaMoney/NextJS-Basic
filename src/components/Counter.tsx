@@ -1,15 +1,14 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const Counter = () => {
     const [count, setCount] = useState(0);
-    const [isChanged, setIsChanged] = useState(false);
-
+    // 더하기
     const handleCountUp = () => {
         setCount(count + 1);
     };
-
+    // 빼기
     const handleCountDown = () => {
         setCount(count - 1);
     };
