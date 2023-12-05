@@ -128,3 +128,13 @@
  6. Middleware : api에서 get,post,put등등 요청이 들어오면 공통적으로 확인하고 검사해야할 사항이 있다면 그걸 각각 만들기보단 문지기의 역할처럼 특정한 요청이 들어오면 공통적으로 수행할 
  것을 미들웨어라고 한다 (ex. 페이지마다 로그인 여부 확인 시)
  * 공식 Doc : https://nextjs.org/docs/app/building-your-application/routing/middleware
+
+ 👉 Vercel에 배포하기
+ - https://vercel.com/dashboard
+ - login을 한다 > github과 연결시킨다 > add new > Project > 배포할 project를 선택 > Build and Output Settings에서 선택사항으로 install할 게 있는지 build할 command가 따로 정해졌는지 확인
+   > Environments Variables > .env항목을 key와 value값을 하나씩 작성해서 등록 > Deploy 클릭
+
+ 👉 CI/CD 진행하기
+ - vercel을 사용하면 자동으로 CI/CD가 된다.
+ - 
+ 
