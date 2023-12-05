@@ -5,6 +5,7 @@ export type Todo = {
     id: string;
     name: string;
     date: string;
+    image: string;
 };
 
 export async function getTodos(): Promise<Todo[]> {

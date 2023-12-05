@@ -1,17 +1,20 @@
 [
     {
         "id": "1",
-        "name": "nextJS공부하기",
-        "date": "2023.12.04."
+        "name": "NextJS",
+        "date": "2023.12.04.",
+        "image": "nextjs.png"
     },
     {
         "id": "2",
-        "name": "개발 학습하기",
-        "date": "2023.12.05."
+        "name": "Javascript",
+        "date": "2023.12.05.",
+        "image": "js.jpeg"
     },
     {
         "id": "3",
-        "name": "TDD 학습하기",
-        "date": "2023.12.06."
+        "name": "Python",
+        "date": "2023.12.06.",
+        "image": "python.png"
     }
 ]

@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getTodo, getTodos } from '@/service/todos';
+import Image from 'next/image';
 
 export const revalidate = 3; // ISR구축을 위해 3초마다 REVALIDATE진행
 
@@ -16,7 +17,18 @@ const TodoLists = async ({ params: { slug } }: Iprops) => {
         notFound();
     }
 
-    return <div>My plan -{todo?.name}</div>;
+    return (
+        <>
+            <h3>Today is study {todo?.name}</h3>
+            <Image
+                src={`/images/${todo?.image}`}
+                alt="이미지"
+                width="400"
+                height="400"
+                style={{ borderRadius: '16px' }}
+            />
+        </>
+    );
 };
 export default TodoLists;
 
@@ -27,8 +39,13 @@ export async function generateStaticParams() {
 }
 
 export function generateMetadata({ params: { slug } }: Iprops) {
+    function title(slug: any) {
+        if (slug === '1') return 'NextJS';
+        else if (slug === '2') return 'Javascript';
+        return 'Python';
+    }
     return {
-        title: `TodoList | ${slug}`,
+        title: `TodoList | ${title(slug)}`,
         description: 'Records todo data',
     };
 }
