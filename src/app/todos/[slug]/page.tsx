@@ -1,6 +1,7 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { getTodo, getTodos } from '@/service/todos';
 import Image from 'next/image';
+import GoTodosBtn from '@/components/GoTodosBtn';
 
 export const revalidate = 3; // ISR구축을 위해 3초마다 REVALIDATE진행
 
@@ -13,8 +14,10 @@ interface Iprops {
 const TodoLists = async ({ params: { slug } }: Iprops) => {
     // 서버 파일에 있는 데이터 중 해당 제품의 정보를 찾아서 그걸 보여줄 것.
     const todo = await getTodo(slug);
-    if (!slug) {
-        notFound();
+    if (!todo) {
+        // 동적 Redirect 개발 - notFound가 아니라 redirect로 경로를 정해준다.
+        redirect('/todos');
+        // notFound();
     }
 
     return (
@@ -29,9 +32,12 @@ const TodoLists = async ({ params: { slug } }: Iprops) => {
                         height="400"
                         style={{ borderRadius: '16px' }}
                     />
+                    <GoTodosBtn />
                 </>
             ) : (
-                <h1>{slug}</h1>
+                <>
+                    <h1>{slug}</h1>
+                </>
             )}
         </>
     );
