@@ -7,7 +7,7 @@ export default function Home() {
     // console.log('os', os.hostname());
     return (
         <>
-            <h1>Space to record a day, a week, a month, and a year</h1>
+            <h1>Space to record a day, a week, a month, and a year (DEV version)</h1>
             <Counter />
             <Image
                 src="https://static.wanted.co.kr/images/events/1633/f85834e9.jpg"
