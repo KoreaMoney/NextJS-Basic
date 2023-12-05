@@ -100,4 +100,18 @@
  👉 API Routing
  * 공식 Doc : https://nextjs.org/docs/app/building-your-application/routing/route-handlers
 
+ 👉 개발할 때 유용한 아이템들
+ 1. Loading : loading하고자 하는 곳의 폴더 안에서 loading이라는 이름을 가진 파일을 생성하면 된다.
+ * 공식 Doc : https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming0
+
+ 2. Error : error를 하고자 하는 곳의 폴더 안에서 error이라는 이름을 가진 파일을 생성하고 use client를 최상단에 넣고 진행한다.
+            직접 error를 해당 폴더에 만들지 않아도 근접한 error사항을 확인하고 적용시킨다.
+ * 공식 Doc : https://nextjs.org/docs/app/building-your-application/routing/error-handling
  
+ 3. Image
+ 
+ 4. Font
+ 
+ 5. Redirect & Rewrite
+ 
+ 6. Middleware
