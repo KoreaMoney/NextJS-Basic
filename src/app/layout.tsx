@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
+import { Anek_Odia } from 'next/font/google';
 import './globals.css';
 import styles from './layout.module.css';
 import Link from 'next/link';
 
-const inter = Inter({ subsets: ['latin'] });
+const sans = Noto_Sans({ weight: '500', subsets: ['latin'] });
+const odia = Anek_Odia({ weight: '600', subsets: ['latin'] });
 
 export const metadata: Metadata = {
     title: 'The record | Home',
@@ -17,9 +19,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className={sans.className}>
                 <header className={styles.header}>
-                    <h1>
+                    <h1 className={odia.className}>
                         <Link href="/">Demo Note</Link>
                     </h1>
                     <nav className={styles.nav}>

@@ -19,14 +19,20 @@ const TodoLists = async ({ params: { slug } }: Iprops) => {
 
     return (
         <>
-            <h3>Today is study {todo?.name}</h3>
-            <Image
-                src={`/images/${todo?.image}`}
-                alt="이미지"
-                width="400"
-                height="400"
-                style={{ borderRadius: '16px' }}
-            />
+            {slug === '1' || slug === '2' || slug === '3' ? (
+                <>
+                    <h3>Today is study {todo?.name}</h3>
+                    <Image
+                        src={`/images/${todo?.image}`}
+                        alt="이미지"
+                        width="400"
+                        height="400"
+                        style={{ borderRadius: '16px' }}
+                    />
+                </>
+            ) : (
+                <h1>{slug}</h1>
+            )}
         </>
     );
 };
@@ -42,7 +48,8 @@ export function generateMetadata({ params: { slug } }: Iprops) {
     function title(slug: any) {
         if (slug === '1') return 'NextJS';
         else if (slug === '2') return 'Javascript';
-        return 'Python';
+        else if (slug === '3') return 'Python';
+        return slug;
     }
     return {
         title: `TodoList | ${title(slug)}`,
