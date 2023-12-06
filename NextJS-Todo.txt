@@ -136,5 +136,5 @@
 
  👉 CI/CD 진행하기
  - vercel을 사용하면 자동으로 CI/CD가 된다.
- - 
- 
+ - 일반적으로 env에 DB_HOST이런식으로 key를 생성하고 "localhost"라는 value를 입력하면 이건 client component에서는 동작하지않고 server component에서만 동작하게 된다.
+ - client component에서 env파일이 동작하기 원한다면 NEXT_PUBLIC_KEY이름을 작성하고 value값을 입력하면 되지만 보안상 취약하여 client component에서만 사용할 경우에만 사용해야 한다.
